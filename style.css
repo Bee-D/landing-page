@@ -1,0 +1,151 @@
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+/*
+7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/*
+8. Create a root stacking context
+*/
+#root, #__next {
+    isolation: isolate;
+}  
+
+body {
+    display: flex;
+    flex-flow: column; 
+    background: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    max-width: 6rem;
+    max-height: 6rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: .2rem .5rem .3rem wheat;
+}
+
+.header {
+    display: flex;
+    flex-flow: column;
+    gap: .5rem;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    border-radius: .5rem;    
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.bottom-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.text p {
+    margin: 2rem 0 0 3rem;
+    max-width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.body {
+    margin: .4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    margin: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    align-content: center;
+}
+
+.gif-container {
+    box-shadow: .2rem .3rem .9rem #3c3b3f;
+    max-width: 20rem;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    margin-top: 1rem;
+}
+
+.top-footer,
+.bottom-footer {
+    text-align: center;
+}
+
+.top-footer ul {
+    padding: .3rem;
+}
+
+.quotes {
+    margin-top: 2.5rem;
+    max-width: 40rem;
+}
